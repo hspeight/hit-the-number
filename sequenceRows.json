@@ -15,7 +15,7 @@
             "values": [
                 {
                     "fontSize": "@fontSizeXSmall",
-                    "color": "red",
+                    "color": "@colorText",
                     "textAlign": "left",
                     "paddingLeft": "@spacingMedium"
                 }
