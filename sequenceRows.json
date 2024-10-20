@@ -17,7 +17,7 @@
                     "fontSize": "@fontSizeXSmall",
                     "color": "@colorWhiteTVSafe",
                     "textAlign": "left",
-                    "paddingLeft": "@spacingMedium"
+                    "paddingLeft": "@spacingXSmall"
                 }
             ]
         },
