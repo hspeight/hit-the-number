@@ -17,7 +17,8 @@
                     "fontSize": "@fontSizeXSmall",
                     "color": "@colorWhiteTVSafe",
                     "textAlign": "left",
-                    "paddingLeft": "@spacingXSmall"
+                    "paddingLeft": "@spacingXSmall",
+                    "textAlignVertical": "center",
                 }
             ]
         },
@@ -26,7 +27,8 @@
                 {
                     "fontSize": "@fontSizeXSmall",
                     "color": "@colorWhite",
-                    "textAlign": "right"
+                    "textAlign": "right",
+                    "textAlignVertical": "center",
                 }
             ]
         }
