@@ -47,7 +47,7 @@
                     "id": "textList",
                     "numbered": false,
                     "height": "${@viewportProfile == @hubRoundSmall ? 40vh : 60vh}",
-                    "width": "90vw",
+                    "width": "${@viewportProfile == @hubRoundSmall ? 95vw : 90vw}",
                     "data": "${sequenceEventPropertiesData.listItems}",
                     "item": [
                         {
@@ -84,7 +84,7 @@
                                     "type": "Text",
                                     "style": "responseAndSolution",
                                     "id": "answer",
-                                    "width": "10vw",
+                                    "width": "${@viewportProfile == @hubRoundSmall ? 9vw : 6vw}",
                                     "color": "${data.response.color}"
                                 },
                                 {
@@ -93,7 +93,7 @@
                                     "type": "Text",
                                     "style": "responseAndSolution",
                                     "id": "solution",
-                                    "width": "10vw",
+                                    "width": "${@viewportProfile == @hubRoundSmall ? 9vw : 6vw}",
                                     "color": "${data.solution.color}"
                                 }
                             ]
