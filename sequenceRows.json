@@ -25,7 +25,7 @@
             "values": [
                 {
                     "fontSize": "@fontSizeXSmall",
-                    "color": "@colorWhit",
+                    "color": "@colorWhite",
                     "textAlign": "right"
                 }
             ]
