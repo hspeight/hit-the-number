@@ -56,7 +56,7 @@
                             "direction": "row",
                             "inheritParentState": true,
                             "paddingLeft": "@spacingLarge",
-                            "paddingTop": "@spacingXSmall",
+                            "paddingTop": "@spacing3XSmall",
                             "items": [
                                 {
                                     "background": {
