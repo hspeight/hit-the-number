@@ -55,7 +55,7 @@
                             "id": "containerProblemList",
                             "direction": "row",
                             "inheritParentState": true,
-                            "paddingLeft": "@spacingLarge",
+                            "paddingLeft": "@spacingSmall",
                             "paddingTop": "@spacing3XSmall",
                             "items": [
                                 {
