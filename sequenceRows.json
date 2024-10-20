@@ -16,7 +16,8 @@
                 {
                     "fontSize": "@fontSizeXSmall",
                     "color": "@colorWhiteTVSafe",
-                    "textAlign": "left"
+                    "textAlign": "left",
+                    "paddingLeft": "@spacingMedium"
                 }
             ]
         },
