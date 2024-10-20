@@ -72,8 +72,7 @@
                                         }
                                     ],
                                     "borderRadius": "20",
-                                    "type": "Frame",
-                                    "paddingLeft": "2vw"
+                                    "type": "Frame"
                                 },
                                 {
                                     "text": "${data.response}",
