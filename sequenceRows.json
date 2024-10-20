@@ -82,7 +82,8 @@
                                     "type": "Text",
                                     "style": "responseAndSolution",
                                     "id": "answer",
-                                    "width": "10vw"
+                                    "width": "10vw",
+                                    "color": "${data.response == data.solution ? 'white' : 'red'}"
                                 },
                                 {
                                     "text": "${data.solution}",
