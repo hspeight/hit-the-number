@@ -77,21 +77,22 @@
                                     "type": "Frame"
                                 },
                                 {
-                                    "text": "${data.response}",
+                                    "text": "${data.response.value}",
                                     "textAlign": "right",
                                     "type": "Text",
                                     "style": "responseAndSolution",
                                     "id": "answer",
                                     "width": "10vw",
-                                    "color": "${data.response == data.solution ? 'white' : 'red'}"
+                                    "color": "${data.response.color}"
                                 },
                                 {
-                                    "text": "${data.solution}",
+                                    "text": "${data.solution.value}",
                                     "textAlign": "right",
                                     "type": "Text",
                                     "style": "responseAndSolution",
                                     "id": "solution",
-                                    "width": "10vw"
+                                    "width": "10vw",
+                                    "color": "${data.solution.color}"
                                 }
                             ]
                         }
