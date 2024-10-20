@@ -37,8 +37,7 @@
     "layouts": {
         "problemList": {
             "description": "Problem to solve, response & solution",
-            "parameters": [
-            ],
+            "parameters": [],
             "items": [
                 {
                     "type": "Sequence",
@@ -56,14 +55,29 @@
                             "paddingTop": "@spacingXSmall",
                             "items": [
                                 {
-                                    "text": "${data.question}",
-                                    "type": "Text",
-                                    "style": "questionText",
-                                    "id": "question",
-                                    "width":"${@viewportProfile == @hubRoundSmall ? 55vw : 70vw}"
+                                    "background": {
+                                        "type": "linear",
+                                        "colorRange": [
+                                            "black",
+                                            "green"
+                                        ]
+                                    },
+                                    "items": [
+                                        {
+                                            "text": "${data.question}",
+                                            "type": "Text",
+                                            "style": "questionText",
+                                            "id": "question",
+                                            "width": "${@viewportProfile == @hubRoundSmall ? 55vw : 70vw}"
+                                        }
+                                    ],
+                                    "borderRadius": "20",
+                                    "type": "Frame",
+                                    "paddingLeft": "2vw"
                                 },
                                 {
                                     "text": "${data.response}",
+                                    "textAlign": "right",
                                     "type": "Text",
                                     "style": "responseAndSolution",
                                     "id": "answer",
@@ -71,6 +85,7 @@
                                 },
                                 {
                                     "text": "${data.solution}",
+                                    "textAlign": "right",
                                     "type": "Text",
                                     "style": "responseAndSolution",
                                     "id": "solution",
