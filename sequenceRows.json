@@ -15,7 +15,7 @@
             "values": [
                 {
                     "fontSize": "@fontSizeXSmall",
-                    "color": "blue",
+                    "color": "@colorYellow800",
                     "textAlign": "left",
                     "paddingLeft": "@spacingMedium"
                 }
@@ -25,7 +25,7 @@
             "values": [
                 {
                     "fontSize": "@fontSizeXSmall",
-                    "color": "@colorBlue800",
+                    "color": "@colorWhite",
                     "textAlign": "right"
                 }
             ]
