@@ -47,7 +47,7 @@
                     "id": "textList",
                     "numbered": false,
                     "height": "${@viewportProfile == @hubRoundSmall ? 40vh : 60vh}",
-                    "width": "100vw",
+                    "width": "90vw",
                     "data": "${sequenceEventPropertiesData.listItems}",
                     "item": [
                         {
