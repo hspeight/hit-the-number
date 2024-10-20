@@ -18,6 +18,7 @@
                     "color": "@colorWhiteTVSafe",
                     "textAlign": "left",
                     "paddingLeft": "@spacingXSmall",
+                    "paddingRight": "@spacingXSmall",
                     "textAlignVertical": "center"
                 }
             ]
@@ -45,7 +46,7 @@
                     "type": "Sequence",
                     "id": "textList",
                     "numbered": false,
-                    "height": "100vh",
+                    "height": "${@viewportProfile == @hubRoundSmall ? 40vh : 60vh}",
                     "width": "100vw",
                     "data": "${sequenceEventPropertiesData.listItems}",
                     "item": [
