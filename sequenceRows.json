@@ -37,7 +37,7 @@
     "onMount": [],
     "graphics": {},
     "commands": {},
-    "layouts": {
+     "layouts": {
         "problemList": {
             "description": "Problem to solve, response & solution",
             "parameters": [],
@@ -52,13 +52,6 @@
                     "item": [
                         {
                             "direction": "row",
-                            "justifyContent": "spaceAround",
-                            "type": "Container",
-                            "id": "containerProblemList",
-                            "inheritParentState": true,
-                            "paddingTop": "@spacing3XSmall",
-                            "paddingLeft": "@spacingSmall",
-                            "paddingRight": "@spacingSmall"
                             "items": [
                                 {
                                     "background": {
@@ -83,11 +76,11 @@
                                 {
                                     "text": "${data.response.value}",
                                     "textAlign": "right",
+                                    "color": "${data.response.color}",
                                     "type": "Text",
                                     "style": "responseAndSolution",
                                     "id": "answer",
-                                    "width": "${@viewportProfile == @hubRoundSmall ? 9vw : 6vw}",
-                                    "color": "${data.response.color}"
+                                    "width": "${@viewportProfile == @hubRoundSmall ? 12vw : 6vw}"
                                 },
                                 {
                                     "text": "${data.solution.value}",
@@ -98,11 +91,17 @@
                                     "width": "${@viewportProfile == @hubRoundSmall ? 9vw : 6vw}",
                                     "color": "${data.solution.color}"
                                 }
-                            ]
+                            ],
+                            "justifyContent": "spaceAround",
+                            "type": "Container",
+                            "id": "containerProblemList",
+                            "inheritParentState": true,
+                            "paddingBottom": "@spacing3XSmall",
+                            "paddingLeft": "@spacingSmall",
+                            "paddingRight": "@spacingSmall"
                         }
                     ]
                 }
             ]
         }
-    }
 }
