@@ -51,12 +51,14 @@
                     "data": "${sequenceEventPropertiesData.listItems}",
                     "item": [
                         {
+                            "direction": "row",
+                            "justifyContent": "spaceAround",
                             "type": "Container",
                             "id": "containerProblemList",
-                            "direction": "row",
                             "inheritParentState": true,
-                            "paddingLeft": "@spacingSmall",
                             "paddingTop": "@spacing3XSmall",
+                            "paddingLeft": "@spacingSmall",
+                            "paddingRight": "@spacingSmall"
                             "items": [
                                 {
                                     "background": {
