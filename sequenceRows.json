@@ -14,7 +14,7 @@
         "questionText": {
             "values": [
                 {
-                    "fontSize": "${@fontSize5XLarge}",
+                    "fontSize": "${@viewportProfile == @hubRoundSmall ? @fontSize2XSmall : @viewportWidth == @viewportSizeMedium ? @fontSizeMedium : @fontSize5XLarge}",
                     "color": "@colorWhiteTVSafe",
                     "textAlign": "left",
                     "paddingLeft": "@spacingXSmall",
