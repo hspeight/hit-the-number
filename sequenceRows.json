@@ -67,7 +67,7 @@
                                     },
                                     "items": [
                                         {
-                                            "text": "${data.question}",
+                                            "text": "${@viewportWidth}",
                                             "type": "Text",
                                             "style": "questionText",
                                             "id": "question",
