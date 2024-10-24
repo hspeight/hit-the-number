@@ -15,15 +15,19 @@
     ],
     "resources": [],
     "styles": {
-        "questionText": {
+        "baseQuestionText": {
             "values": [
                 {
-                    "fontSize": "${@viewportProfile == @hubRoundSmall || @mobileSmall ? @fontSize2XSmall : @viewportWidth == @viewportSizeMedium ? @fontSizeMedium : @fontSize3XLarge}",
+                    "fontSize": "${@viewportProfile == @hubRoundSmall ? @fontSize2XSmall ? @fontSizeMedium}",
                     "color": "@colorWhiteTVSafe",
                     "textAlign": "left",
                     "paddingLeft": "@spacingXSmall",
                     "paddingRight": "@spacingXSmall",
                     "textAlignVertical": "center"
+                },
+                {
+                  "when": "${@viewportWidth == @viewportSizeMedium}",
+                  "color": "red"
                 }
             ]
         },
@@ -67,7 +71,7 @@
                                     },
                                     "items": [
                                         {
-                                            "text": "${@viewportWidth}",
+                                            "text": "${data.question}",
                                             "type": "Text",
                                             "style": "questionText",
                                             "id": "question",
