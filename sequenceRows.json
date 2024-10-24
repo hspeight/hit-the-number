@@ -71,6 +71,8 @@
                                         }
                                     ],
                                     "borderRadius": "20",
+                                    "borderColor": "red",
+                                    "borderWidth": "5",
                                     "type": "Frame"
                                 },
                                 {
