@@ -71,7 +71,7 @@
                                     },
                                     "items": [
                                         {
-                                            "text": "${viewport.width}, ${viewport.height}, ${@viewportProfile}",
+                                            "text": "${data.question}",
                                             "type": "Text",
                                             "style": "questionText",
                                             "id": "question",
