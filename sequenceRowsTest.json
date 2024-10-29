@@ -102,7 +102,6 @@
                                     "color": "${data.solution.color}"
                                 }
                             ],
-                "justifyContent": "center",
                             "type": "Container",
                             "id": "containerProblemList",
                             "inheritParentState": true,
