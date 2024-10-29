@@ -8,10 +8,10 @@
             "name": "alexa-layouts",
             "version": "1.1.0"
         },
-            {
-      "name": "alexa-viewport-profiles",
-      "version": "1.6.0"
-    }
+        {
+            "name": "alexa-viewport-profiles",
+            "version": "1.6.0"
+        }
     ],
     "resources": [],
     "styles": {
@@ -45,74 +45,81 @@
     "onMount": [],
     "graphics": {},
     "commands": {},
-     "layouts": {
+    "layouts": {
         "problemList": {
             "description": "Problem to solve, response & solution",
             "parameters": [],
             "items": [
                 {
-                    "type": "Sequence",
-                    "id": "textList",
-                    "numbered": false,
-                    "height": "${@viewportProfile == @hubRoundSmall ? 40vh : 60vh}",
-                    "width": "${@viewportProfile == @hubRoundSmall ? 95vw : 90vw}",
-                    "data": "${sequenceEventPropertiesData.listItems}",
-                    "item": [
+                    "items": [
                         {
-                            "direction": "row",
-                            "items": [
+                            "type": "Sequence",
+                            "id": "textList",
+                            "numbered": false,
+                            "height": "${@viewportProfile == @hubRoundSmall ? 40vh : 60vh}",
+                            "width": "${@viewportProfile == @hubRoundSmall ? 95vw : 90vw}",
+                            "data": "${sequenceEventPropertiesData.listItems}",
+                            "item": [
                                 {
-                                    "background": {
-                                        "type": "linear",
-                                        "colorRange": [
-                                            "black",
-                                            "green"
-                                        ]
-                                    },
+                                    "direction": "row",
                                     "items": [
                                         {
-                                            "text": "${data.question}",
+                                            "background": {
+                                                "type": "linear",
+                                                "colorRange": [
+                                                    "black",
+                                                    "green"
+                                                ]
+                                            },
+                                            "items": [
+                                                {
+                                                    "text": "${data.question}",
+                                                    "type": "Text",
+                                                    "style": "questionText",
+                                                    "id": "question",
+                                                    "width": "${@viewportProfile == @hubRoundSmall ? 55vw : 70vw}"
+                                                }
+                                            ],
+                                            "borderRadius": "20",
+                                            "borderColor": "red",
+                                            "borderWidth": "5",
+                                            "type": "Frame"
+                                        },
+                                        {
+                                            "text": "${data.response.value}",
+                                            "textAlign": "right",
+                                            "color": "${data.response.color}",
                                             "type": "Text",
-                                            "style": "questionText",
-                                            "id": "question",
-                                            "width": "${@viewportProfile == @hubRoundSmall ? 55vw : 70vw}"
+                                            "style": "responseAndSolution",
+                                            "id": "answer",
+                                            "width": "${@viewportProfile == @hubRoundSmall ? 12vw : 6vw}"
+                                        },
+                                        {
+                                            "text": "${data.solution.value}",
+                                            "textAlign": "right",
+                                            "type": "Text",
+                                            "style": "responseAndSolution",
+                                            "id": "solution",
+                                            "width": "${@viewportProfile == @hubRoundSmall ? 9vw : 6vw}",
+                                            "color": "${data.solution.color}"
                                         }
                                     ],
-                                    "borderRadius": "20",
-                                    "borderColor": "red",
-                                    "borderWidth": "5",
-                                    "type": "Frame"
-                                },
-                                {
-                                    "text": "${data.response.value}",
-                                    "textAlign": "right",
-                                    "color": "${data.response.color}",
-                                    "type": "Text",
-                                    "style": "responseAndSolution",
-                                    "id": "answer",
-                                    "width": "${@viewportProfile == @hubRoundSmall ? 12vw : 6vw}"
-                                },
-                                {
-                                    "text": "${data.solution.value}",
-                                    "textAlign": "right",
-                                    "type": "Text",
-                                    "style": "responseAndSolution",
-                                    "id": "solution",
-                                    "width": "${@viewportProfile == @hubRoundSmall ? 9vw : 6vw}",
-                                    "color": "${data.solution.color}"
+                                    "justifyContent": "spaceAround",
+                                    "type": "Container",
+                                    "id": "containerProblemList",
+                                    "inheritParentState": true,
+                                    "paddingBottom": "@spacing3XSmall",
+                                    "paddingLeft": "@spacingSmall",
+                                    "paddingRight": "@spacingSmall"
                                 }
-                            ],
-                            "justifyContent": "spaceAround",
-                            "type": "Container",
-                            "id": "containerProblemList",
-                            "inheritParentState": true,
-                            "paddingBottom": "@spacing3XSmall",
-                            "paddingLeft": "@spacingSmall",
-                            "paddingRight": "@spacingSmall"
+                            ]
                         }
-                    ]
+                    ],
+                    "type": "Container",
+                    "id": "containerForSequence"
+                    "height": "80vh"
                 }
             ]
         }
-     }
+    }
 }
