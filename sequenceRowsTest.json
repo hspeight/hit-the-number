@@ -102,7 +102,7 @@
                                     "color": "${data.solution.color}"
                                 }
                             ],
-                            "justifyContent": "spaceAround",
+                "justifyContent": "center",
                             "type": "Container",
                             "id": "containerProblemList",
                             "inheritParentState": true,
